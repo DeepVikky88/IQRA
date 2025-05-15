@@ -10,7 +10,7 @@ from PURVIMUSIC.misc import SUDOERS
 from PURVIMUSIC import app, userbot
 
 
-@app.on_message(filters.command(["leaveallone"]) & filters.user(SUDOERS))
+@app.on_message(filters.command(["leaveallone"]) & SUDOERS)
 async def leaveall(_, message: Message):
     hm = await message.reply_text(f"» {userbot.one.name} sᴛᴀʀᴛᴇᴅ ʟᴇᴀᴠɪɴɢ ᴄʜᴀᴛs...")
     left = 0
@@ -37,7 +37,7 @@ async def leaveall(_, message: Message):
         pass
 
 
-@app.on_message(filters.command(["leavealltwo"]) & filters.user(SUDOERS))
+@app.on_message(filters.command(["leavealltwo"]) & SUDOERS)
 async def leaveall(_, message: Message):
     hm = await message.reply_text(f"» {userbot.two.name} sᴛᴀʀᴛᴇᴅ ʟᴇᴀᴠɪɴɢ ᴄʜᴀᴛs...")
     left = 0
@@ -64,7 +64,7 @@ async def leaveall(_, message: Message):
         pass
 
 
-@app.on_message(filters.command(["leaveallthree"]) & filters.user(SUDOERS))
+@app.on_message(filters.command(["leaveallthree"]) & SUDOERS)
 async def leaveall(_, message: Message):
     hm = await message.reply_text(f"» {userbot.three.name} sᴛᴀʀᴛᴇᴅ ʟᴇᴀᴠɪɴɢ ᴄʜᴀᴛs...")
     left = 0
